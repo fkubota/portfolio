@@ -1,4 +1,5 @@
 # fkubota.github.io
+url: https://fkubota.github.io/portfolio/
 
 ## Project setup
 ```
