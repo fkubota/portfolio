@@ -1,15 +1,10 @@
 <template>
 <v-app>
   <Openning/>
-  <v-divider></v-divider>
   <Aboutme/>
-  <v-divider></v-divider>
   <Experiences/>
-  <v-divider></v-divider>
   <Skills/>
-  <v-divider></v-divider>
   <Work/>
-  <v-divider></v-divider>
 </v-app>
 </template>
 
