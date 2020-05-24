@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h2>Work.</h2>
-    <v-container>
+  <div class="contents-bg-2">
+    <v-container class="contents">
+      <h1 class="contents-title">Work.</h1>
       <v-row align="center" justify="center">
         <v-col>
           <v-card class="mx-auto" color="#26f6da" dark max-width="400" >
@@ -28,5 +28,6 @@
 </template>
 
 <script></script>
-
-<style></style>
+<style>
+  @import "./../css/mycss.css";
+</style>
