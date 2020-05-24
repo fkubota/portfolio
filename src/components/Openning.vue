@@ -31,6 +31,7 @@
   }
   .bg {
     background-size: cover;
+    background-position: center;
   }
   .home-content {
     text-align: center;
