@@ -1,6 +1,7 @@
 <template>
 <v-app>
   <Openning/>
+  <vue-typer text="Hello World!"></vue-typer>
   <v-divider></v-divider>
   <Aboutme/>
   <v-divider></v-divider>

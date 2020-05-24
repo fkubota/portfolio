@@ -11,7 +11,10 @@
         </nav>
       </header>
       <div class="home-content">
-        <h1 class="page-title"> Hi I'm fkubota </h1>
+        <h1>
+          <vue-typer class="page-title" text="Hi I'm fkubota"></vue-typer>
+        </h1>
+        <!-- <h1 class="page-title"> Hi I'm fkubota </h1> -->
         <p>konnihiwa</p>
       </div>
     </div>
@@ -44,5 +47,8 @@
   }
   .main-nav li {
     margin-left: 36px;
+  }
+  .vue-typer .custom.char.typed {
+  color: #ffffff;
   }
 </style>
