@@ -1,41 +1,32 @@
 <template>
-  <!-- <v-img src="@/../design/output/background.png"></v-img> -->
-  <body>
-    <div id="home" class='bg'>
-      <div class="home-content">
-        <h1 class="page-title"> Hi I'm fkubota </h1>
-        <p>konnihiwa</p>
-      </div>
-    </div>
-    <div>
-      <p> this is contents </p>
-    </div>
-  </body>
+<v-app>
+  <Openning/>
+  <v-divider></v-divider>
+  <Aboutme/>
+  <v-divider></v-divider>
+  <Experiences/>
+  <v-divider></v-divider>
+  <Skills/>
+  <v-divider></v-divider>
+</v-app>
 </template>
 
 <script>
+import Openning from "./components/Openning";
+import Aboutme from "./components/Aboutme";
+import Experiences from "./components/Experiences";
+import Skills from "./components/Skills";
 export default {
   name: 'App',
-
+  components: {
+    Openning,
+    Aboutme,
+    Experiences,
+    Skills
+  },
   data: () => ({
     //
   }),
 };
 </script>
-
-<style>
-  #home {
-    background-image: url("~@/../design/output/background.png");
-    min-height: 100vh;
-    color: #ffffff;
-  }
-  .bg {
-    background-size: cover;
-  }
-  .home-content {
-    text-align: center;
-  }
-  .page-title {
-    font-family: "Philosopher", serif;
-  }
-</style>
+<style></style>
