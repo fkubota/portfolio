@@ -1,16 +1,22 @@
 <template>
   <v-app>
-  <full-page ref="fullpage" :options="options" id="fullpage">
+  <full-page ref="fullpage" id="fullpage" style='background-color: #2e5471'>
+      <particles-bg color="#aaaaaa" num=200 type="cobweb" :bg=true></particles-bg>
+    <!-- <vue-particles color="#dedede"> -->
+    <!-- </vue-particles>                -->
     <div class='section'>
       <Openning/>
     </div>
-    <div class='section' style='background-color: #f5f5f5'>
+    <div class='section'>
+      <Contents/>
+    </div>
+    <div class='section'>
       <Aboutme/>
     </div>
     <div class='section'>
       <Experiences/>
     </div>
-    <div class='section' style='background-color: #f5f5f5'>
+    <div class='section'>
       <Skills/>
     </div>
     <div class='section'>
@@ -18,6 +24,7 @@
     </div>
   </full-page>
   </v-app>
+
 </template>
 <script>
   import Openning from "./Openning";
@@ -25,6 +32,7 @@
   import Experiences from "./Experiences";
   import Skills from "./Skills";
   import Work from "./Work";
+  import Contents from "./Contents";
 
   export default {
       name: 'App',
@@ -34,6 +42,7 @@
           Experiences,
           Skills,
           Work,
+          Contents,
         },
     };
 </script>

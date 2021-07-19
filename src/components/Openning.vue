@@ -14,8 +14,7 @@
         <h1>
           <vue-typer class="page-title" text="Hi I'm fkubota"></vue-typer>
         </h1>
-        <!-- <h1 class="page-title"> Hi I'm fkubota </h1> -->
-        <p>konnihiwa</p>
+				<p>konnichiwa</p>
       </div>
     </div>
   </body>
@@ -52,4 +51,6 @@
   .vue-typer .custom.char.typed {
   color: #ffffff;
   }
+
+
 </style>

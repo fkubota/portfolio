@@ -1,5 +1,9 @@
 .contents-title {
-	color: #000000;
+	color: #ffffff;
+	font-size: 4rem;
+}
+.contents-body {
+	color: #ffffff;
 	font-size: 4rem;
 }
 .contents-bg-1 {

@@ -1,29 +1,20 @@
 <template>
-  <div class="contents-bg-1">
-    <v-container class="contents">
-      <h1 class="contents-title">Skills.</h1>
-      <v-row>
-        <v-col cols=4 v-for="(item, key) in items" :key="key">
-          <v-hover v-slot:default="{ hover }">
-          <v-card v-bind:color="skill_card_color" hover=true height="300px" class="mx-auto">
-        <v-expand-transition>
-        <div v-if="hover" class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text" style="height: 100%;" >
-            $14.99
-        </div>
-        </v-expand-transition>
+  <v-container class="contents">
+    <h1 class="contents-title">Skills.</h1>
+    <v-row>
+      <v-col cols=4 v-for="(item, key) in items" :key="key">
+          <v-card v-bind:color="skill_card_color" height="300px" class="mx-auto">
             <v-card-title>
-                <v-icon large left> mdi-laptop </v-icon>
+              <v-icon large left> mdi-laptop </v-icon>
               <span class="title font-weight-light">{{ item.title }}</span>
             </v-card-title>
             <v-card-text class="headline font-weight-light">
               {{ item.contents }}
             </v-card-text>
           </v-card>
-          </v-hover>
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script>
   export default {

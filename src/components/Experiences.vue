@@ -1,6 +1,7 @@
 <template>
     <v-container class="contents">
       <h1 class="contents-title">Experiences.</h1>
+      <div style='color: white'>
       <v-timeline>
         <v-timeline-item fill-dot small>
           <h2>
@@ -41,6 +42,7 @@
           </span>
         </v-timeline-item>
       </v-timeline>
+      </div>
     </v-container>
 </template>
 
