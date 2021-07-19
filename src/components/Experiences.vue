@@ -1,5 +1,4 @@
 <template>
-  <div class="contents-bg-2" data-aos="fade-left">
     <v-container class="contents">
       <h1 class="contents-title">Experiences.</h1>
       <v-timeline>
@@ -43,7 +42,6 @@
         </v-timeline-item>
       </v-timeline>
     </v-container>
-  </div>
 </template>
 
 <script></script>

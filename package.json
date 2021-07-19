@@ -11,6 +11,7 @@
     "aos": "^3.0.0-beta.6",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
+    "vue-fullpage.js": "^0.1.7",
     "vue-typer": "^1.2.0",
     "vuetify": "^2.2.11"
   },

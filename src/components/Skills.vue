@@ -1,5 +1,5 @@
 <template>
-  <div class="contents-bg-1" data-aos="fade-left">
+  <div class="contents-bg-1">
     <v-container class="contents">
       <h1 class="contents-title">Skills.</h1>
       <v-row>
