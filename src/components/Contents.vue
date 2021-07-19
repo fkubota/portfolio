@@ -17,7 +17,7 @@
     color: #f9b535;
 }
 .text_hover{
-  color: #aaaaaa;
+  color: #ffffff;
   font-size: 50px;
 }
 </style>

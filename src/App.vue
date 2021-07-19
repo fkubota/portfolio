@@ -12,8 +12,6 @@
 
 <script>
 import Main from './components/Main';
-<!-- @import url('https://fonts.googleapis.com/earlyaccess/kokoro.css'); -->
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 export default {
   name: 'App',
@@ -25,4 +23,9 @@ export default {
   }),
 };
 </script>
-<style></style>
+<style>
+<style>
+#App {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+</style>
