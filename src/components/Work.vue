@@ -16,19 +16,20 @@
                 <v-card
                     :elevation="hover ? 12 : 2"
                     :class="{ 'on-hover': hover }"
+                    :href='item.link'
                     >
                     <v-img
                         :src="item.img"
                         height="225px"
                         >
                     </v-img>
-        <v-fade-transition>
-          <v-overlay v-if="!hover" absolute color="#000000" opacity=0.6 >
-            <!-- <v-btn>See more info</v-btn> -->
-            <h2 class="contents-body text-center">{{ item.title }}</h2>
-            <p class="contents-body text-center"> {{ item.text }} </p>
-          </v-overlay>
-        </v-fade-transition>
+
+                      <v-fade-transition>
+                        <v-overlay v-if="!hover" absolute color="#000000" opacity=0.75 >
+                          <h2 class="contents-body text-center" style="color:#ffffff">{{ item.title }}</h2>
+                          <p class="contents-body text-center" style="color:#ffffff"> {{ item.text }} </p>
+                        </v-overlay>
+                      </v-fade-transition>
 
                 </v-card>
               </v-hover>
@@ -43,37 +44,51 @@
       data: () => ({
           items: [
               {
+                  title: 'Timeline',
+                  text: '日々の出来事/アウトプットをまとめている場所',
+                  img: 'https://github.com/fkubota/timeline/blob/main/src/images/design.png?raw=true',
+                  link: 'https://fkubota.github.io/timeline/',
+                },
+
+              {
                   title: 'Bookshelf',
                   text: '論文まとめ',
-                  subtext: 'Newly released songs. Updated daily.',
-                  img: 'https://github.com/fkubota/portfolio/blob/master/design/images/design.png?raw=true',
+                  img: 'https://github.com/fkubota/portfolio/blob/master/design/images/bookshelf.png?raw=true',
+                  link: 'https://fkubota.github.io/bookshelf/',
                 },
+
               {
-                  title: 'Rock',
-                  text: 'Greatest Rock Hits',
-                  subtext: 'Lose yourself in rock tunes.',
-                  img: 'https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+                  title: '[note] 転職記事',
+                  text: '未経験で機械学習エンジニアに転職。〜安定からベンチャーへ〜',
+                  img: 'https://github.com/fkubota/portfolio/blob/master/design/images/note.png?raw=true',
+                  link: 'https://note.com/f_kubota/n/n744d269a9b6e',
                 },
+
               {
-                  title: 'Mellow Moods',
-                  text: 'Ambient Bass',
-                  subtext: 'Chill beats to mellow you out.',
-                  img: 'https://images.unsplash.com/photo-1542320868-f4d80389e1c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3750&q=80',
+                  title: 'Carrier-Owl',
+                  text: 'arxiv-->DeepL-->Slack',
+                  img: 'https://github.com/fkubota/Carrier-Owl/blob/master/data/images/carrier-owl.png?raw=true',
+                  link: 'https://github.com/fkubota/Carrier-Owl',
                 },
+
+              {
+                  title: '[Zenn] Kaggle日記という戦い方',
+                  text: 'Kaggleの情報整理関係の記事',
+                  img: 'https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2021/03/zenn-960x504.jpg',
+                  link: 'https://zenn.dev/fkubota/articles/3d8afb0e919b555ef068',
+                },
+
+              {
+                  title: '[SD] エンジニア1年目をまとめたスライド',
+                  text: '生産性と戦った僕の一年の記録とツールたち',
+                  img: 'https://github.com/fkubota/portfolio/blob/master/design/images/sd01.png?raw=true',
+                  link: 'https://speakerdeck.com/fkubota/sheng-chan-xing-tozhan-tutapu-false1nian-falseji-lu-toturutati',
+                },
+
             ],
-          transparent: 'rgba(255, 255, 255, 0)',
         }),
     }
 </script>
 <style>
 @import "./../css/mycss.css";
-.v-card {
-}
-
-.v-card:not(.on-hover) {
-}
-
-.show-text {
-  color: rgba(255, 255, 255, 1) !important;
-}
 </style>
