@@ -10,12 +10,18 @@ import '@luxdamore/vue-cursor-fx/dist/CursorFx.css';
 import ParticlesBg from "particles-bg-vue";
 import VueParticles from 'vue-particles'
 Vue.use(VueParticles)
-
-
 Vue.use(VueTyperPlugin);
 Vue.use(VueFullPage);
 Vue.use(CursorFx);
 Vue.use(ParticlesBg);
+
+// font-awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+// import { faCoffee, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { faSpeakerDeck, faKaggle } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+library.add(faSpeakerDeck, faKaggle)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({
   created () {

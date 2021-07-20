@@ -6,9 +6,24 @@
     <!-- </vue-particles>                -->
     <div class='section'>
       <Openning/>
+        <!-- <v-btn style='width:200px; margin-left:-100px; bottom:10%; left:50%; color:#ffffff' outlined @click="$refs.fullpage.api.moveSectionDown()">scroll</v-btn> -->
+        <!-- <div data-aos="flip-right" data-aos-delay="1000" style="bottom:30%"> -->
+          <v-btn style='width:200px; margin-left:-100px; bottom:20%; left:50%; color:#ffffff' outlined @click="$refs.fullpage.api.moveSectionDown()">scroll</v-btn>
+        <!-- </div> -->
     </div>
     <div class='section'>
-      <Contents/>
+      <v-container class="contents">
+        <div class="contents-title" >Contents.</div>
+        <v-row align="center" justify="center">
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(1)">Home</div>
+        </v-row>
+        <v-row align="center" justify="center">
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(3)">About Me</div>
+        </v-row>
+        <v-row align="center" justify="center">
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(4)">Skills</div>
+        </v-row>
+      </v-container>
     </div>
     <div class='section'>
       <Aboutme/>
@@ -32,7 +47,6 @@
   import Experiences from "./Experiences";
   import Skills from "./Skills";
   import Work from "./Work";
-  import Contents from "./Contents";
 
   export default {
       name: 'App',
@@ -42,7 +56,19 @@
           Experiences,
           Skills,
           Work,
-          Contents,
         },
     };
 </script>
+
+<style>
+@import "./../css/mycss.css";
+.text_hover:hover{
+  color: #f9b535;
+  font-size: 70px;
+}
+.text_hover{
+  color: #FAE7C3;
+  font-size: 50px;
+	font-family: "Philosopher", serif;
+}
+</style>

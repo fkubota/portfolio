@@ -1,23 +1,25 @@
 <template>
   <!-- <v-img src="@/../design/output/background.png"></v-img> -->
-  <body>
+  <!-- <v-container class="contents" fluid> -->
     <div id="home" class='bg'>
-      <header>
-        <nav>
-          <ul class="main-nav">
-            <li>about</li>
-            <li>work</li>
-          </ul>
-        </nav>
-      </header>
+      <v-container>
+      <!-- <header>                  -->
+      <!--   <nav>                   -->
+      <!--     <ul class="main-nav"> -->
+      <!--       <li>about</li>      -->
+      <!--       <li>work</li>       -->
+      <!--     </ul>                 -->
+      <!--   </nav>                  -->
+      <!-- </header>                 -->
       <div class="home-content">
         <h1>
           <vue-typer class="page-title" text="Hi I'm fkubota"></vue-typer>
         </h1>
-				<p>konnichiwa</p>
+        <!-- <p>konnichiwa</p> -->
       </div>
+      </v-container>
     </div>
-  </body>
+    <!-- <arrow><span></span>Scroll<span></span></arrow> -->
 </template>
 
 <script></script>
@@ -34,7 +36,7 @@
   }
   .home-content {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
   }
   .page-title {
     font-size: 5rem;
@@ -51,6 +53,4 @@
   .vue-typer .custom.char.typed {
   color: #ffffff;
   }
-
-
 </style>
