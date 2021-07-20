@@ -13,10 +13,12 @@
               md="4"
               >
               <v-hover v-slot="{ hover }">
-                <v-card
+                <div class='rounded-pill'>
+                  <v-card
                     :elevation="hover ? 12 : 2"
                     :class="{ 'on-hover': hover }"
                     :href='item.link'
+                    style="border-radius:0px;"
                     >
                     <v-img
                         :src="item.img"
@@ -25,13 +27,14 @@
                     </v-img>
 
                       <v-fade-transition>
-                        <v-overlay v-if="!hover" absolute color="#000000" opacity=0.75 >
+                        <v-overlay v-if="!hover" absolute color="#000000" opacity=0.75>
                           <h2 class="contents-body text-center" style="color:#ffffff">{{ item.title }}</h2>
                           <p class="contents-body text-center" style="color:#ffffff"> {{ item.text }} </p>
                         </v-overlay>
                       </v-fade-transition>
 
                 </v-card>
+                </div>
               </v-hover>
           </v-col>
         </template>

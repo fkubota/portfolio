@@ -21,25 +21,31 @@
           <div class='text_hover' @click="$refs.fullpage.api.moveTo(3)">About Me</div>
         </v-row>
         <v-row align="center" justify="center">
-          <div class='text_hover' @click="$refs.fullpage.api.moveTo(4)">Skills</div>
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(4)">Work</div>
+        </v-row>
+        <v-row align="center" justify="center">
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(5)">History</div>
+        </v-row>
+        <v-row align="center" justify="center">
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(6)">Monologue</div>
         </v-row>
       </v-container>
-    </div>
-    <div class='section'>
-      <Work/>
-    </div>
-    <div class='section'>
-      <Monologue/>
     </div>
     <div class='section'>
       <Aboutme/>
     </div>
     <div class='section'>
+      <Work/>
+    </div>
+    <div class='section'>
       <History/>
     </div>
     <div class='section'>
-      <Skills/>
+      <Monologue/>
     </div>
+    <!-- <div class='section'> -->
+    <!--   <Skills/>           -->
+    <!-- </div>                -->
   </full-page>
   </v-app>
 
@@ -48,7 +54,6 @@
   import Openning from "./Openning";
   import Aboutme from "./Aboutme";
   import History from "./History";
-  import Skills from "./Skills";
   import Work from "./Work";
   import Monologue from "./Monologue";
 
@@ -58,7 +63,6 @@
           Openning,
           Aboutme,
           History,
-          Skills,
           Work,
           Monologue,
         },

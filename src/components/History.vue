@@ -63,17 +63,6 @@
               <strong>2018-2018</strong>
             </v-col>
             <v-col>
-              <strong>沖縄県立普天間高校</strong>
-            </v-col>
-          </v-row>
-        </v-timeline-item>
-
-        <v-timeline-item color="#aaaaaa" small >
-          <v-row>
-            <v-col cols="3">
-              <strong>2018-2018</strong>
-            </v-col>
-            <v-col>
               <a href="https://linx.jp/" ><strong class="link_text">株式会社LINX</strong></a>
             </v-col>
           </v-row>
