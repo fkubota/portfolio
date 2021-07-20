@@ -26,16 +26,19 @@
       </v-container>
     </div>
     <div class='section'>
+      <Work/>
+    </div>
+    <div class='section'>
+      <Monologue/>
+    </div>
+    <div class='section'>
       <Aboutme/>
     </div>
     <div class='section'>
-      <Experiences/>
+      <History/>
     </div>
     <div class='section'>
       <Skills/>
-    </div>
-    <div class='section'>
-      <Work/>
     </div>
   </full-page>
   </v-app>
@@ -44,18 +47,20 @@
 <script>
   import Openning from "./Openning";
   import Aboutme from "./Aboutme";
-  import Experiences from "./Experiences";
+  import History from "./History";
   import Skills from "./Skills";
   import Work from "./Work";
+  import Monologue from "./Monologue";
 
   export default {
       name: 'App',
       components: {
           Openning,
           Aboutme,
-          Experiences,
+          History,
           Skills,
           Work,
+          Monologue,
         },
     };
 </script>
