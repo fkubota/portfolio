@@ -1,8 +1,9 @@
 <template>
-  <v-container class="contents" fluid style="width:100%">
+  <v-container class="contents">
     <h1 class="contents-title">Work.</h1>
     <v-row
         justify="center"
+        align="center"
         >
         <template v-for="(item, i) in items">
           <v-col
@@ -37,6 +38,7 @@
           </v-col>
         </template>
     </v-row>
+  <div style="margin-bottom: 400px"></div>
   </v-container>
 </template>
 
