@@ -4,6 +4,7 @@ import vuetify from './plugins/vuetify';
 import VueTyperPlugin from 'vue-typer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import 'fullpage.js/vendors/scrolloverflow'
 import VueFullPage from 'vue-fullpage.js'
 import CursorFx from '@luxdamore/vue-cursor-fx';
 import '@luxdamore/vue-cursor-fx/dist/CursorFx.css';

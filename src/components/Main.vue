@@ -1,6 +1,6 @@
 <template>
   <v-app>
-  <full-page ref="fullpage" id="fullpage" style='background-color: #2e5471'>
+  <full-page ref="fullpage" id="fullpage" style='background-color: #2e5471' :options="options">
       <particles-bg color="#aaaaaa" num=200 type="cobweb" :bg=true></particles-bg>
     <!-- <vue-particles color="#dedede"> -->
     <!-- </vue-particles>                -->
@@ -8,7 +8,7 @@
       <Openning/>
         <!-- <v-btn style='width:200px; margin-left:-100px; bottom:10%; left:50%; color:#ffffff' outlined @click="$refs.fullpage.api.moveSectionDown()">scroll</v-btn> -->
         <!-- <div data-aos="flip-right" data-aos-delay="1000" style="bottom:30%"> -->
-          <v-btn style='width:200px; margin-left:-100px; bottom:20%; left:50%; color:#ffffff' outlined @click="$refs.fullpage.api.moveSectionDown()">scroll</v-btn>
+          <v-btn style='width:200px; margin-left:-100px; bottom:200px; left:50%; color:#ffffff' outlined @click="$refs.fullpage.api.moveSectionDown()">scroll</v-btn>
     </div>
     <div class='section'>
 
@@ -67,6 +67,13 @@
           Work,
           Monologue,
         },
+      data() {
+          return {
+              options: {
+                  scrollOverflow: true,
+                }
+            }
+        }
     };
 </script>
 

@@ -1,16 +1,12 @@
 <template>
-  <v-container class="contents">
+  <v-container class="contents" fluid style="width:100%">
     <h1 class="contents-title">Work.</h1>
     <v-row
-        class="fill-height"
-        align="center"
         justify="center"
         >
         <template v-for="(item, i) in items">
           <v-col
               :key="i"
-              cols="12"
-              md="4"
               >
               <v-hover v-slot="{ hover }">
                 <div class='rounded-pill'>
@@ -19,10 +15,12 @@
                     :class="{ 'on-hover': hover }"
                     :href='item.link'
                     style="border-radius:0px;"
+                    width="250px"
                     >
+
                     <v-img
                         :src="item.img"
-                        height="225px"
+                        height="200px"
                         >
                     </v-img>
 
