@@ -35,9 +35,9 @@
     <div class='section'>
       <Aboutme/>
     </div>
-    <!-- <div class='section'> -->
-      <!-- <Work/>    -->
-    <!-- </div>                -->
+    <div class='section'>
+      <Work/>
+    </div>
     <div class='section'>
       <History/>
     </div>
@@ -55,6 +55,7 @@
   import Openning from "./Openning";
   import Aboutme from "./Aboutme";
   import History from "./History";
+  import Work from "./Work";
   import Monologue from "./Monologue";
 
   export default {
@@ -63,15 +64,9 @@
           Openning,
           Aboutme,
           History,
+          Work,
           Monologue,
         },
-      data() {
-          return {
-              options: {
-                  scrollOverflow: true,
-                }
-            }
-        }
     };
 </script>
 
