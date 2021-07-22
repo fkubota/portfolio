@@ -67,6 +67,13 @@
           Work,
           Monologue,
         },
+      data() {
+          return {
+              options: {
+                  scrollOverflow: true,
+                }
+            }
+        }
     };
 </script>
 
