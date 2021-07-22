@@ -1,6 +1,6 @@
 <template>
   <v-container class="contents">
-    <h1 class="contents-title">Work.</h1>
+    <h1 class="contents-title">Mork.</h1>
     <v-row
         justify="center"
         align="center"
