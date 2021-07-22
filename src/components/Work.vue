@@ -38,7 +38,7 @@
           </v-col>
         </template>
     </v-row>
-  <div style="margin-bottom: 400px"></div>
+  <!-- <div style="margin-bottom: 400px"></div> -->
   </v-container>
 </template>
 
