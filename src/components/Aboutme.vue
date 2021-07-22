@@ -59,7 +59,7 @@
 					</v-row>
 				</v-col>
 				<v-col>
-					<v-icon size=500px color='#f9b53520'>mdi-human</v-icon>
+					<v-icon size=300px color='#f9b53520'>mdi-human</v-icon>
 				</v-col>
 			</v-row>
 		</v-container>
