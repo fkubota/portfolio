@@ -1,6 +1,6 @@
 <template>
-  <v-container class="contents">
-    <h1 class="contents-title">Work_card_width.</h1>
+  <v-container class="contents" fluid>
+    <h1 class="contents-title">Work.</h1>
     <v-row
         justify="center"
         align="center"
@@ -16,6 +16,7 @@
                     :class="{ 'on-hover': hover }"
                     :href='item.link'
                     style="border-radius:0px;"
+                    width="250px"
                     >
 
                     <v-img
