@@ -1,5 +1,5 @@
 <template>
-  <v-container class="contents" fluid>
+  <v-container class="contents">
     <h1 class="contents-title">Work.</h1>
     <v-row
         justify="center"
