@@ -10,8 +10,12 @@
         <!-- <div data-aos="flip-right" data-aos-delay="1000" style="bottom:30%"> -->
           <v-btn style='width:200px; margin-left:-100px; bottom:200px; left:50%; color:#ffffff' outlined @click="$refs.fullpage.api.moveSectionDown()">scroll</v-btn>
     </div>
-    <div class='section'>
 
+    <div class="section">
+      <Slide/>
+    </div>
+
+    <div class='section'>
       <v-container class="contents">
         <div class="contents-title" >Contents.</div>
         <v-row align="center" justify="center" style="margin-top:5%">
@@ -57,6 +61,7 @@
   import History from "./History";
   import Work from "./Work";
   import Monologue from "./Monologue";
+  import Slide from "./Slide";
 
   export default {
       name: 'App',
@@ -66,6 +71,7 @@
           History,
           Work,
           Monologue,
+          Slide,
         },
       data() {
           return {
