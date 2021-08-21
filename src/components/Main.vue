@@ -22,13 +22,16 @@
           <div class='text_hover' @click="$refs.fullpage.api.moveTo(3)">About Me</div>
         </v-row>
         <v-row align="center" justify="center">
-          <div class='text_hover' @click="$refs.fullpage.api.moveTo(4)">Work</div>
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(4)">Timeline/Bookshelf</div>
         </v-row>
         <v-row align="center" justify="center">
-          <div class='text_hover' @click="$refs.fullpage.api.moveTo(5)">History</div>
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(5)">Work</div>
         </v-row>
         <v-row align="center" justify="center">
-          <div class='text_hover' @click="$refs.fullpage.api.moveTo(6)">Monologue</div>
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(6)">History</div>
+        </v-row>
+        <v-row align="center" justify="center">
+          <div class='text_hover' @click="$refs.fullpage.api.moveTo(7)">Monologue</div>
         </v-row>
       </v-container>
 
