@@ -11,9 +11,6 @@
           <v-btn style='width:200px; margin-left:-100px; bottom:200px; left:50%; color:#ffffff' outlined @click="$refs.fullpage.api.moveSectionDown()">scroll</v-btn>
     </div>
 
-    <div class="section">
-      <Slide/>
-    </div>
 
     <div class='section'>
       <v-container class="contents">
@@ -39,6 +36,9 @@
     <div class='section'>
       <Aboutme/>
     </div>
+    <div class="section">
+      <Slide/>
+    </div>
     <div class='section'>
       <Work/>
     </div>
@@ -48,9 +48,6 @@
     <div class='section'>
       <Monologue/>
     </div>
-    <!-- <div class='section'> -->
-    <!--   <Skills/>           -->
-    <!-- </div>                -->
   </full-page>
   </v-app>
 
