@@ -60,6 +60,14 @@
             </v-tooltip>
             <v-tooltip bottom>
               <template v-slot:activator="{ on, attrs }">
+                <v-btn icon href='https://fkubota.hatenablog.com/archive' v-bind="attrs" v-on="on">
+                  <v-icon color='#cccccc'>mdi-fountain-pen-tip</v-icon>
+                </v-btn>
+              </template>
+              <span>hatena blog</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on, attrs }">
                 <v-btn icon href='https://zenn.dev/fkubota' v-bind="attrs" v-on="on">
                   <v-icon color='#cccccc'>mdi-alpha-z-circle</v-icon>
                 </v-btn>
