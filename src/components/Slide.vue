@@ -27,7 +27,7 @@
                 },
               {
                   src: 'https://github.com/fkubota/timeline/blob/main/src/images/design.png?raw=true',
-                  link: 'https://fkubota.github.io/bookshelf/',
+                  link: 'https://fkubota.notion.site/Bookshelf-9f59e0177d004bdfa6cfd1606fe3d59e',
                 },
             ],
         }),
